@@ -1,0 +1,9 @@
+# Coverage reposrt
+coverage
+
+# Node modules
+node_modules
+
+# idea
+.idea
+.run
