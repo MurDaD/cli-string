@@ -9,23 +9,18 @@
     "cstr": "./dist/cli.js"
   },
   "files": [
-    "demo",
     "dist",
     "src",
-    ".babelrc",
     ".gitignore",
     "jest.config.js",
-    "tsconfig.json",
-    "webpack.config.js"
+    "tsconfig.json"
   ],
   "scripts": {
     "test": "npx jest --coverage",
     "test:jest": "npx jest",
     "lint": "eslint ./src/** --ext .ts",
     "lint:fix": "eslint ./src/**  --ext .ts --fix",
-    "build": "tsc  --build --clean && tsc",
-    "watch": "webpack --watch",
-    "serve": "webpack serve"
+    "build": "tsc  --build --clean && tsc"
   },
   "pre-commit": [
     "lint",
@@ -34,13 +29,17 @@
   "keywords": [
     "string",
     "cli",
-    "string functions"
+    "string functions",
+    "string operations",
+    "string commands",
+    "scli"
   ],
   "author": "MurDaD (Max Shakhbazov)",
   "license": "Apache-2.0",
   "devDependencies": {
     "@babel/core": "^7.16.12",
     "@babel/preset-env": "^7.16.11",
+    "@types/crypto-js": "^4.1.1",
     "@types/css-font-loading-module": "^0.0.7",
     "@types/jest": "^27.4.1",
     "@types/yargs": "^17.0.10",
@@ -75,6 +74,7 @@
   },
   "homepage": "https://github.com/MurDaD/cli-string#readme",
   "dependencies": {
+    "crypto-js": "^4.1.1",
     "yargs": "^17.4.1"
   }
 }
