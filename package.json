@@ -1,6 +1,6 @@
 {
   "name": "cli-string",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Common operations with strings, which can be used in your command line and code.",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",

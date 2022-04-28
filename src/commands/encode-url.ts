@@ -1,1 +1,28 @@
-import type { Arguments, CommandBuilder } from 'yargs';type Options = {  string: string;};exports.command = 'encodeUrl <string>';exports.describe = 'encodes the special characters. In addition, it encodes the following characters: , / ? : @ & = + $ #';export const builder: CommandBuilder<Options, Options> = (yargs) =>  yargs    .positional('string', { type: 'string', demandOption: true });export const handler = (argv: Arguments<Options>): void => {  const { string } = argv;  try {    const result = handlerFunc(string);    process.stdout.write(result);    process.exit(0);  } catch (error) {    process.stdout.write(error.message);    process.exit(1);  }};export const handlerFunc = (string: string) => {  return encodeURIComponent(string);};
+import type { Arguments, CommandBuilder } from 'yargs';
+
+type Options = {
+  string: string;
+};
+
+exports.command = 'encodeUrl <string>';
+exports.describe = 'encodes the special characters. In addition, it encodes the following characters: , / ? : @ & = + $ #';
+
+export const builder: CommandBuilder<Options, Options> = (yargs) =>
+  yargs
+    .positional('string', { type: 'string', demandOption: true });
+
+export const handler = (argv: Arguments<Options>): void => {
+  const { string } = argv;
+  try {
+    const result = handlerFunc(string);
+    process.stdout.write(result);
+    process.exit(0);
+  } catch (error) {
+    process.stdout.write(error.message);
+    process.exit(1);
+  }
+};
+
+export const handlerFunc = (string: string) => {
+  return encodeURIComponent(string);
+};
