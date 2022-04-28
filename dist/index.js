@@ -8,12 +8,12 @@ const encrypt_1 = require("./commands/encrypt");
 const json_pretty_1 = require("./commands/json-pretty");
 const stripslashes_1 = require("./commands/stripslashes");
 module.exports = {
-    addslashes: addslashes_1.handler,
-    decode: decode_1.handler,
-    decodeUrl: decode_url_1.handler,
-    encode: encode_1.handler,
-    encodeUrl: encode_url_1.handler,
-    encrypt: encrypt_1.handler,
-    jsonPretty: json_pretty_1.handler,
-    stripslashes: stripslashes_1.handler,
+    addslashes: addslashes_1.handlerFunc,
+    decode: decode_1.handlerFunc,
+    decodeUrl: decode_url_1.handlerFunc,
+    encode: encode_1.handlerFunc,
+    encodeUrl: encode_url_1.handlerFunc,
+    encrypt: encrypt_1.handlerFunc,
+    jsonPretty: json_pretty_1.handlerFunc,
+    stripslashes: stripslashes_1.handlerFunc,
 };

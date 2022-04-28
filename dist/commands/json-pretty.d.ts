@@ -5,4 +5,5 @@ declare type Options = {
 };
 export declare const builder: CommandBuilder<Options, Options>;
 export declare const handler: (argv: Arguments<Options>) => void;
+export declare const handlerFunc: (string: string, spaces: string | number | undefined) => string;
 export {};
