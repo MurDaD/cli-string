@@ -14,6 +14,6 @@ const helpers_1 = require("yargs/helpers");
     // Useful aliases.
     .alias({
     h: 'help',
-    encrypt: 'hash',
+    hash: 'encrypt',
 })
     .argv;

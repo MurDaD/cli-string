@@ -4,7 +4,7 @@ declare const _default: {
     decodeUrl: (string: string) => string;
     encode: (format: string | undefined, string: string) => string;
     encodeUrl: (string: string) => string;
-    encrypt: (format: string | undefined, string: string) => string;
+    hash: (format: string | undefined, string: string) => string;
     jsonPretty: (string: string, spaces: string | number | undefined) => string;
     stripslashes: (string: string) => string;
 };
